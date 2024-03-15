@@ -27,3 +27,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Configure Tailwind
+Setting up Tailwind CSS in an Angular project. [Karma](https://tailwindcss.com/docs/guides/angular)
+
+
+ng g @schematics/angular:component dashboard/dashboard --skip-selector --inline-style --skip-tests
+ng g @schematics/angular:component dashboard/pages/change-detection --skip-selector --inline-style --skip-tests
+ng g @schematics/angular:component dashboard/pages/control-flow --skip-selector --inline-style --skip-tests
+ng g @schematics/angular:component dashboard/pages/defer-options --skip-selector --inline-style --skip-tests
+ng g @schematics/angular:component dashboard/pages/defer-views --skip-selector --inline-style --skip-tests
+ng g @schematics/angular:component dashboard/pages/user --skip-selector --inline-style --skip-tests
