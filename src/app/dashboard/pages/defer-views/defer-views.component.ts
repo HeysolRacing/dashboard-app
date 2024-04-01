@@ -9,6 +9,6 @@ import { TitleComponent } from '@shared/title/title.component';
   templateUrl: './defer-views.component.html'
 })
 export default class DeferViewsComponent {
-  public currentTitle = computed(() => `Defer Views / Blocs`
+  public currentTitle = computed(() => `Defer Views / Blocks`
   );
 }

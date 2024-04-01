@@ -16,7 +16,7 @@ export class HeavyLoadersSlowComponent {
     console.log('HeavyLoader Component Loaded')
 
     const start = Date.now();
-    while ( Date.now() - start < 5000){
+    while ( Date.now() - start < 1000){
 
     }
   }
