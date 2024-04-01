@@ -1,13 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-heavy-loaders-slow',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
-  template: `<p>heavy-loaders-slow works!</p>`,
+  imports: [ CommonModule ],
+  templateUrl: './heavy-loaders-slow.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeavyLoadersSlowComponent { }
+export class HeavyLoadersSlowComponent { 
+
+  @Input({ required:true }) cssClass!: string; // Using definite assignment assertion
+
+  constructor(){
+    console.log('HeavyLoader Component Loaded')
+
+    const start = Date.now();
+    while ( Date.now() - start < 5000){
+
+    }
+  }
+
+}
